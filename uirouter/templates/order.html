@@ -1,0 +1,26 @@
+<ion-view view-title="Order Note" ng-init="blinds();">
+    <ion-content class="page">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <div class="list">
+                        <button ng-show="failure" class="button button-block button-assertive ion-close-circled">&nbsp;&nbsp;Error. Please retry.</button>
+                        <button ng-show="success" class="button button-block button-balanced ion-checkmark-circled">&nbsp;&nbsp;Order Note saved!</button>
+                        <form name="myForm" novalidate>
+                          <div class="button-bar">
+                            <div class="item item-input-inset">
+                               <input ng-required="true" type="text" ng-model="orderNote.order" placeholder="Order">
+                            </div>
+                          </div>
+                          <textarea ng-required="true" ng-model="orderNote.notes" placeholder="Notes" class="event-text button button-block"></textarea>
+                          <div class="button-bar">
+                           <button ng-disabled="myForm.$invalid" ng-click="saveOrder()" class="button button-royal">Save</button>
+                           <button ng-click="backToMenu()"class="button button-light">Cancel</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,44 @@
+﻿app.controller('HomeCtrl', function ($state, $scope, $stateParams, $http, $cookies, ionicMaterialInk) {
+    $scope.goToMan = function(){
+        $state.go('app.manager')
+    };
+    $scope.goToCust = function(){
+        $state.go('app.manager')
+    };
+    //ionicMaterialInk.displayEffect();
+   /* $scope.user = {
+        u : "",
+        p : ""
+    };
+    $scope.redirectToUser = function(data){
+        $cookies.put('user', JSON.stringify({
+            u : data.user,
+            r : data.role
+        }));
+        if(data.role == "admin")
+            $state.go('app.fulluser'); 
+        else
+            $state.go('app.operator'); 
+        console.log(JSON.parse($cookies.get('user')));
+    };
+    $scope.submitLogin = function(){
+        //console.log($scope.user);
+        $http({
+              url: "backend/login.php",
+              data:angular.toJson($scope.user),
+              method: "POST",
+              headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }).success(function(data, status, headers, config) {
+                console.log(data);
+                if(data.result){
+                    $scope.redirectToUser(data);
+                }else{
+                    alert('Wrong User id/Password');
+                    $scope.user = {};
+                }
+            }).error(function(data, status, headers, config) {
+                this.status = status;
+        });
+    }; 
+    */ 
+});

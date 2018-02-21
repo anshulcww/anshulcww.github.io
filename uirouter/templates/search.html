@@ -1,0 +1,47 @@
+<ion-view view-title="Search" ng-init="blinds();">
+    <ion-content class="page">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                  <form name="searchForm">
+                    <div class="list">
+                        <div class="button-bar">
+                          <button class="button button-small button-royal" ng-click="backToMenu()">Back To Menu</button>
+                        </div>
+                        <div class="button-bar">
+                          <div class="item item-input-inset">
+                             <input class="custom-input" type="text" ng-pattern="regexModel" ng-model="searchObj.model" placeholder="Model">
+                             <input class="custom-input" type="text" ng-pattern="regexOrder" ng-model="searchObj.order" placeholder="Order">
+                             <input class="custom-input nrf-input" type="text" ng-pattern="regexNrf" ng-model="searchObj.nrfId" placeholder="nrfID">
+                          </div>
+                        </div>
+                        <div class="button-bar">
+                          <div class="item item-input-inset">
+                             <input type="text" ng-pattern="regexDevice" ng-model="searchObj.device" placeholder="Device ID">
+                          </div>
+                        </div>
+                        <div class="button-bar">
+                          <div class="item item-input-inset">
+                             <input type="text" ng-model="searchObj.event" placeholder="Event">
+                          </div>
+                        </div>
+                        <div class="button-bar">
+                          <div class="item item-input-inset">
+                             <input type="text" ng-model="searchObj.creator" placeholder="Creator">
+                          </div>
+                        </div>
+                        <div class="button-bar">
+                          <label class="item item-input" >
+                              <span class="date-label input-label">Date</span>
+                              <input ng-model="searchObj.date" ng-required="true" type="date">
+                            </label>
+                        </div>
+                        <button ng-disabled="searchForm.$invalid" ng-click="search()" class="button button-royal">Search</button>
+                        <button ng-show="noResultsFound" class="button button-positive ion-information-circled">&nbsp;&nbsp;No Results Found</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

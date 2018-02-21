@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OP/Registraion Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style type="text/css">
+		*{
+			margin: 0 auto;
+			padding: 0;
+		}
+		body, html{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid" ng-app="loginreg" ng-controller= "MainCtrl">
+		<div class="row text-center">
+			<h1>OP/Registration Form</h1>
+			<hr />
+		</div>
+		<div class="row text-center">
+			<form class="form-horizontal" id="Registration">
+				<h3>Please fill your details here:</h3>
+				<hr style="width: 50%;" />
+				<div class="form-group">
+					<label class="col-md-4 control-label">First Name</label>  
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+						<div class="form-group">
+					<label class="col-md-4 control-label" >Last Name</label> 
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label">Username</label>  
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input  name="user_name" placeholder="Username" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" >Password</label> 
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="user_password" placeholder="Password" class="form-control"  type="password">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+
+				<div class="form-group">
+					<label class="col-md-4 control-label" >Confirm Password</label> 
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="confirm_password" placeholder="Confirm Password" class="form-control"  type="password">
+						</div>
+					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+					<label class="col-md-4 control-label">E-Mail</label>  
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+							<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-md-4 control-label">Contact No.</label>  
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+							<input name="contact_no" placeholder="(639)" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-offset-3 col-md-6 ">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="agree" value="agree" /> Agree with the terms and conditions
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+				<div class="col-md-6 col-md-offset-3">
+						<button type="submit" class="btn btn-primary" name="signup" value="Submit">Submit</button>
+						<button type="reset" class="btn btn-primary" name="reset" value="Reset">Reset</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>
+(
+<!-- 
+mast bhai.
+sahi jaa raha hai..
+meta viewport ka tag add kar head ke andar....boss meko actually meta viewport samajh nh aya th us time bh dhang se...
+cleared - all your doubts are one google search away :) boss dhyaan nh kbhi wrna padhta sachi me ....:)
+
+theek hai, form sahi lag raha hai..padding add kar.
+ok? yooo 
+im happy. thank u ...boss suno 1 baat or last. ek min aata hu....yoo time chahiye to lelo 
+me khana khaalunga 
+araam se free hokr ?
+dekhlo im available ... :)t
+heek hai 3 baje tak aa phir
+done 
+ok
+ -->

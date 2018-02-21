@@ -1,0 +1,16 @@
+<ion-view view-title="Data Entry Menu" ng-init="blinds();">
+    <ion-content class="page">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <h4>Hi, {{user}}!</h4>
+                    <button class="button button-small button-outline button-logout button-assertive" ng-click="logout()">logout</button>
+                    <h3>Data Entry Home</h3>
+                    <button ng-click="singleEvent()" class="button button-light">Single Device Event</button><br/>
+                    <button ng-click="multiEvent()" class="button button-light">Multi Device Event</button><br/>
+                    <button ng-click="orderNote()" class="button button-light">Order Note</button><br/>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

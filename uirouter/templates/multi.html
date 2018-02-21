@@ -1,0 +1,41 @@
+<ion-view view-title="Multi Device Event" ng-init="blinds();">
+    <ion-content class="page">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <div class="list">
+                        <button ng-show="failure" class="button button-block button-assertive ion-close-circled">&nbsp;&nbsp;Error. Please retry.</button>
+                        <button ng-show="success" class="button button-block button-balanced ion-checkmark-circled">&nbsp;&nbsp;Event logged!</button>
+                        <form name="myForm" novalidate>
+                            <textarea placeholder="Event" ng-required="true" rows="2" cols="20" ng-model="eventNote.event" class="event-text button button-block"></textarea>
+                            <div class="button-bar">
+                             <button ng-disabled="myForm.$invalid" ng-click="eventEntered()" class="button button-royal">Next</button>
+                             <button ng-click="backToMenu()" class="button button-light">Cancel</button>
+                            </div>
+                        </form>
+                        <form ng-show="eventOK" name="deviceInp" novalidate>                           
+                            <div class="button-bar">
+                                 <input class="text-left event-text button button-block" ng-required="true" type="text" ng-pattern="regexDevice" ng-model="eventNote.device" placeholder="Device ID">
+                            </div>
+                            <div class="button-bar">
+                             <button ng-disabled="deviceInp.$invalid" ng-click="saveEvent()" class="button button-royal">Next</button>
+                             <button ng-click="reset()" class="button button-light">Cancel</button>
+                            </div>
+                        </form>
+                        <h3>Last few logged events:</h3>
+                        <div class="text-left">
+                          <div class="row header">
+                            <div class="col"><h4>Device</h4></div>
+                            <div class="col"><h4>Event</h4></div>
+                          </div>
+                          <div class="row" ng-repeat="e in lastEvents">
+                            <div class="col">{{e.x_device_id}}</div>
+                            <div class="col">{{e.x_event_desc}}</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

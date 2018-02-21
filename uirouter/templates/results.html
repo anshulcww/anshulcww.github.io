@@ -1,0 +1,65 @@
+<ion-view view-title="Results" ng-init="blinds();">
+    <ion-content class="page">
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <div class="list">
+                        <button class="button button-small button-royal" ng-click="backToSearch()">Return to Search</button>
+                        <button class="button button-small button-royal" ng-click="newSearch()">New Search</button>
+                    </div>
+                    <p>
+                      <h3>Search Strings:</h3>
+                      <div class="list text-left">
+                        <div ng-if="inputObj.model  !='' ">
+                          <h4>Model</h4>
+                          <h5>{{inputObj.model}}</h5>
+                        </div>
+                        <div ng-if="inputObj.order  !='' ">
+                          <h4>Order</h4>
+                          <h5>{{inputObj.order}}</h5>
+                        </div>
+                        <div ng-if="inputObj.nrfId  !='' ">
+                          <h4>nrf Id</h4>
+                          <h5>{{inputObj.nrfId}}</h5>
+                        </div>
+                        <div ng-if="inputObj.device !='' ">
+                          <h4>Device Id</h4>
+                          <h5>{{inputObj.device}}</h5>
+                        </div>
+                        <div ng-if="inputObj.event  !='' ">
+                          <h4>Event</h4>
+                          <h5>{{inputObj.event}}</h5>
+                        </div>
+                        <div ng-if="inputObj.creator!='' ">
+                          <h4>Creator</h4>
+                          <h5>{{inputObj.creator}}</h5>
+                        </div>
+                        <div ng-if="inputObj.date!='' ">
+                          <h4>From Date:</h4>
+                          <h5>{{inputObj.date}}</h5>
+                        </div>
+                      </div>
+
+                    </p>
+                    <p>
+                      <h3>{{results.length}} Results found</h3>
+                      <div class="text-left">
+                        <div class="row header">
+                          <div class="col"><h4>deviceID</h4></div>
+                          <div class="col"><h4>event</h4></div>
+                          <div class="col"><h4>creator</h4></div>
+                          <div class="col"><h4>date/time</h4></div>
+                        </div>
+                        <div class="row" ng-repeat="e in results">
+                          <div class="col">{{e.x_device_id}}</div>
+                          <div class="col">{{e.x_event_desc}}</div>
+                          <div class="col">{{e.x_creator}}</div>
+                          <div class="col">{{e.x_timestamp}}</div>
+                        </div>
+                      </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

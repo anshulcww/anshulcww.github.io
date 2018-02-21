@@ -1,0 +1,58 @@
+					<!DOCTYPE html>
+					<html>
+					<head>
+						<title>OP login Form</title>
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+						<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+						<style type="text/css">
+							*{
+								margin: 0 auto;
+								padding: 0;
+							}
+							body, html{
+								width: 100%;
+								height: 100%;
+							}
+						</style>
+					</head>
+					<body>
+						<div class="container-fluid" ng-app=" ">
+							<div class="row text-center">
+							<h1>Op/Login</h1>
+								<hr />
+							</div>
+							<div class="row text-center">
+								<form class="form-horizontal" id="Registration">
+									<h3>Please login here:</h3>
+									<hr style="width: 50%;" />
+									<div class="form-group">
+					<label class="col-md-4 control-label">Username</label>  
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input  name="user_name" placeholder="Username" class="form-control"  type="text">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-4 control-label" >Password</label> 
+					<div class="col-md-4 inputGroupContainer">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input name="user_password" placeholder="Password" class="form-control"  type="password">
+						</div>
+					</div>
+				</div>
+									<div class="form-group">
+										<div class="col-md-6 col-md-offset-3">
+											<button type="submit" class="btn btn-primary" name="signup" value="Submit">Login</button>
+											<button type="reset" class="btn btn-primary" name="reset" value="Reset">New User</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</body>
+					</html>

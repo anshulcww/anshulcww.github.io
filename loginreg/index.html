@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0 auto;
+			padding: 0;
+		}
+		body, html{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+ 	<div class="container-fluid" ng-app = "loginreg" ng-controlller	= "MainCtrl">
+ 		<h1 style="text-align: center;">Welcome</h1>
+ 		<hr />
+ 		<div class="row text-center" style="vertical-align: middle;">
+			<div class="col-md-4">
+				<h3>OP</h3>
+				<button type="submit" class="btn btn-primary" name="signup" value="Submit">Login</button>
+				<!-- ispe me function lgana chah raha hu register pe....den angular se me 
+				op ka registration page khulwa kar (ng-view seekh raha th) den me registration page hone k bad submit button pe function lga raha th and Thank you wala page update kr raha th ...to iss type se Angular Ui Router seekh raha hu ...ab aap bolo ??? 
+				customer ka bhi bana de..fir mereko bhej, uske baad me sabke home screen ke layout banane hain.
+
+				wo main batata hun jabtak tu cust page bana
+
+				cust, merchant, op ka home (login ke baad jo ayega.) page + register page + ek login page user/pass fields wala sirf
+
+				aisa simple login page without logo
+				http://envisagecyberart.in/projects/event-log/#/app/home
+
+				in sab ka alag alag html pages bana pehle
+
+				isme angular ka kuch nahi karna hai..jo bhi include kiya hai nikaal de...ha ha ha ok
+
+				functionality dikhane ke liye wednesday tak time hai..but layout aaj dikhana hai...ok done boss  kfrattaa fahtu  baana bhbaad me sare doubt clear ho jayenge angular wale..ok boss ..
+
+				thoda speed up karle lunch  hua?
+				nh boss :(
+				suno but ye sab me krdunga bht jaldi cz mene banaya hi nh or me angular padhne chala gaya ....copy paste type hi krna thoda alag feilds daal dunga ..diff dikhaane k liye ...haan
+
+				aur home screens ke layout batata hun tereko .it.n.e bana de phele..done hojaega 
+				3 baje tak? done
+				ok go! yo bye all the best
+				-->
+				<button type="submit" class="btn btn-primary" name="signup" value="Submit">register</button>
+				
+			</div> 			
+			<div class="col-md-4">
+				<h3>Merchant</h3>
+				<button type="submit" class="btn btn-primary" name="signup" value="Submit">Login</button>
+				<button type="submit" class="btn btn-primary" name="signup" value="Submit">register</button>
+				
+			</div> 			
+ 	
+			<div class="col-md-4">
+				<h3>Customer</h3>
+				<button type="submit" class="btn btn-primary" name="signup" value="Submit">Login</button>
+				<button type="submit" class="btn btn-primary" name="signup" value="Submit">register</button>
+				
+			</div>
+		</div> 			
+ 	</div>
+
+</body>
+</html>
