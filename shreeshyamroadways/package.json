@@ -1,0 +1,27 @@
+{
+    "name": "shree_shyam_roadways",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "build": "parcel frontend/config.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@uirouter/angularjs": "^1.0.15",
+        "angular": "^1.6.9",
+        "bulma": "^0.6.2",
+        "nodemon": "^1.15.0"
+    },
+    "devDependencies": {
+        "body-parser": "^1.18.2",
+        "compression": "^1.7.1",
+        "express": "^4.16.2",
+        "tachyons": "^4.9.1",
+        "window-size": "^1.1.0"
+    }
+}
